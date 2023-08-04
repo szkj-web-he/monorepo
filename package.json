@@ -1,5 +1,5 @@
 {
-  "name": "test_lib2",
+  "name": "@react_lib",
   "version": "1.0.0",
   "description": "\"# monorepo\"",
   "main": "es/index.js",
