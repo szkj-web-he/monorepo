@@ -1,0 +1,7 @@
+packages:
+  - "components/*"
+  - "hooks/*"
+
+workspaces:
+  - "components/*"
+  - "hooks/*"

@@ -1,0 +1,77 @@
+/**
+* @file 
+* @date 2023-06-07
+* @author xuejie.he
+* @lastModify xuejie.he 2023-06-07
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use "../../../Constant/breakPoint.scss" as *;
+@use "../../../Constant/font.scss" as *;
+@use "../../../Constant/color.scss" as *;
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+.input_wrapper {
+  border: 1px solid $neutral_200;
+  border-radius: 6px;
+  transition: all 0.15s linear;
+  position: relative;
+  box-sizing: border-box;
+  &:not(.input_disabled):not(.input_active):not(.input_error):hover {
+    border-color: $primary_400;
+  }
+
+  &.input_active {
+    border-color: $primary_600;
+    box-shadow: 0 0 0 2px rgba($primary_500, 0.3);
+  }
+  &.input_error {
+    border-color: red;
+  }
+  &.input_noClear {
+    .input_main {
+      padding-right: 1.2rem;
+    }
+  }
+}
+
+.input_main {
+  outline: none;
+  appearance: none;
+  padding: 0 3.3rem 0 1.2rem;
+  @include body_2();
+  color: $neutral_500;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: transparent;
+  &::placeholder {
+    color: $neutral_300;
+  }
+  &:-webkit-autofill:focus {
+    background-image: none;
+  }
+}
+
+.input_clearIcon {
+  cursor: pointer;
+  font-size: 0;
+  color: $neutral_300;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  &.input_active {
+    font-size: 1.6rem;
+    opacity: 1;
+  }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 1.2rem;
+}
+
+.input_disabled {
+  border-color: $neutral_200;
+  background-color: $neutral_50;
+  cursor: not-allowed;
+}
