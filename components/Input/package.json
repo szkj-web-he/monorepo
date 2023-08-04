@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "react_lib": "workspaces*"
+    "snap_lib": "workspaces*"
   },
   "author": "",
   "license": "ISC"

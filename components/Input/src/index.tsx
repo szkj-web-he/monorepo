@@ -13,7 +13,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { Icon, useLatest, classNames } from "react_lib";
+import { Icon, useLatest, classNames } from "snap_lib";
 import styles from "./style.module.scss";
 /* <------------------------------------ **** DEPENDENCE IMPORT END **** ------------------------------------ */
 /* <------------------------------------ **** INTERFACE START **** ------------------------------------ */
