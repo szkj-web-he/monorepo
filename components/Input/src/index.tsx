@@ -13,7 +13,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { Icon, useLatest, classNames } from "test_lib";
+import { Icon, useLatest, classNames } from "test_lib2";
 import styles from "./style.module.scss";
 /* <------------------------------------ **** DEPENDENCE IMPORT END **** ------------------------------------ */
 /* <------------------------------------ **** INTERFACE START **** ------------------------------------ */

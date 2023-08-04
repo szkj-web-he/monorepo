@@ -61,7 +61,7 @@ export default (input, output) => {
         image(),
         progress(),
       ],
-      external: ["react", "react-dom", "test_lib"],
+      external: ["react", "react-dom", "test_lib2"],
     },
     {
       input,
