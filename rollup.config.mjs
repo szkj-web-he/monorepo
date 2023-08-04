@@ -61,7 +61,7 @@ const config = (input, outputName) => {
         image(),
         progress(),
       ],
-      external: ["react", "react-dom", "@react_lib"],
+      external: ["react", "react-dom", "react_lib"],
     },
     {
       input,
