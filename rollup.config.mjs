@@ -92,7 +92,7 @@ const indexConfig = [
       format: "es",
     },
     external: /\.\/[a-z]+\/index/i,
-    plugins: [replacePlugin("js")],
+    plugins: [replacePlugin()],
   },
   {
     input: fileURLToPath(new URL("./index.ts", import.meta.url)),
@@ -101,7 +101,7 @@ const indexConfig = [
       format: "es",
     },
     external: /\.\/[a-z]+\/index/i,
-    plugins: [replacePlugin("d.ts")],
+    plugins: [replacePlugin()],
   },
 ];
 
